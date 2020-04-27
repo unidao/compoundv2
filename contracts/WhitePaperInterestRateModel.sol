@@ -12,6 +12,8 @@ contract WhitePaperInterestRateModel is InterestRateModel {
     using SafeMath for uint;
 
     event NewInterestParams(uint baseRatePerBlock, uint multiplierPerBlock);
+    event NewAdmin(address indexed newAdmin);
+    event NewPendingAdmin(address indexed newPendingAdmin);
 
     /**
      * @notice The approximate number of blocks per year that is assumed by the interest rate model
@@ -28,6 +30,9 @@ contract WhitePaperInterestRateModel is InterestRateModel {
      */
     uint public baseRatePerBlock;
 
+
+    address public admin;
+    address public pendingAdmin;
     /**
      * @notice Construct an interest rate model
      * @param baseRatePerYear The approximate target base APR, as a mantissa (scaled by 1e18)
@@ -36,8 +41,9 @@ contract WhitePaperInterestRateModel is InterestRateModel {
     constructor(uint baseRatePerYear, uint multiplierPerYear) public {
         baseRatePerBlock = baseRatePerYear.div(blocksPerYear);
         multiplierPerBlock = multiplierPerYear.div(blocksPerYear);
+        admin = msg.sender;
 
-        emit NewInterestParams(baseRatePerBlock, multiplierPerBlock);
+    emit NewInterestParams(baseRatePerBlock, multiplierPerBlock);
     }
 
     /**
@@ -83,11 +89,31 @@ contract WhitePaperInterestRateModel is InterestRateModel {
         return utilizationRate(cash, borrows, reserves).mul(rateToPool).div(1e18);
     }
 
+    // todo 
+    function acceptAdmin() public {
+        require(msg.sender == pendingAdmin, "WhitePaperInterestRateModel::acceptAdmin: Call must come from pendingAdmin.");
+        admin = msg.sender;
+        pendingAdmin = address(0);
 
-    // todo Модификация функционала изменения процентной ставки
-    function setBorrowRate() public {
-
-
+        emit NewAdmin(admin);
     }
 
+    function setPendingAdmin(address pendingAdmin_) public {
+        require(msg.sender == admin, "WhitePaperInterestRateModel::setPendingAdmin: Call must come from WhitePaperInterestRateModel.");
+        pendingAdmin = pendingAdmin_;
+
+        emit NewPendingAdmin(pendingAdmin);
+    }
+
+    function setUtilizationRate(uint newMultiplier) public {
+        require(msg.sender == admin, "WhitePaperInterestRateModel::setPendingAdmin: Call must come from WhitePaperInterestRateModel.");
+
+        multiplierPerBlock = newMultiplier;
+    }
+
+    function setBaseRatePerBlock(uint newBaseRate) public {
+        require(msg.sender == admin, "WhitePaperInterestRateModel::setPendingAdmin: Call must come from WhitePaperInterestRateModel.");
+
+        baseRatePerBlock = newBaseRate;
+    }
 }
