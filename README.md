@@ -2,3 +2,9 @@
 
 Compound Protocol
 =================
+
+truffle compile
+
+truffle migrate
+
+
