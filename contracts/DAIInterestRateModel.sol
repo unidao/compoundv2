@@ -2,10 +2,10 @@ pragma solidity ^0.5.12;
 
 import "./JumpRateModel.sol";
 
-interface InterestRateModel {
+ /*interface InterestRateModel {
     /**
      * @notice Indicator that this is an InterestRateModel contract (for inspection)
-     */
+     *
     function isInterestRateModel() external pure returns (bool);
 
     /**
@@ -14,7 +14,7 @@ interface InterestRateModel {
       * @param borrows The total amount of borrows the market has outstanding
       * @param reserves The total amnount of reserves the market has
       * @return The borrow rate per block (as a percentage, and scaled by 1e18)
-      */
+      *
     function getBorrowRate(uint cash, uint borrows, uint reserves) external view returns (uint);
 
     /**
@@ -24,11 +24,11 @@ interface InterestRateModel {
       * @param reserves The total amnount of reserves the market has
       * @param reserveFactorMantissa The current reserve factor the market has
       * @return The supply rate per block (as a percentage, and scaled by 1e18)
-      */
+      *
     function getSupplyRate(uint cash, uint borrows, uint reserves, uint reserveFactorMantissa) external view returns (uint);
 
 }
-
+*/
 /**
   * @title Compound's DAIInterestRateModel Contract
   * @author Compound

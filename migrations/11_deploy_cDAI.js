@@ -3,7 +3,7 @@ const Comptroller = artifacts.require("Comptroller");
 const DAIInterestRateModel = artifacts.require("DAIInterestRateModel");
 const CDaiDelegate = artifacts.require("CDaiDelegate");
 
-const underlying = "0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98";
+const underlying = "0x6b175474e89094c44da98b954eedeac495271d0f";
 const mantissa= 200000000000000000000000000;
 const name_= "Compound Dai";
 const symbol = "cDAI";

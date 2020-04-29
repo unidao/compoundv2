@@ -473,4 +473,13 @@ contract CErc20Delegator is CTokenInterface, CErc20Interface, CDelegatorInterfac
         // delegate all other functions to current implementation
         delegateAndReturn();
     }
+
+    //
+    function placeAvailableFundsInDSR() public {
+        require(msg.sender == admin);
+
+        require(underlying == 0x6B175474E89094C44Da98b954EedeAC495271d0F);
+
+
+    }
 }
