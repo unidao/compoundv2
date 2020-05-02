@@ -1,7 +1,7 @@
 {
-  "name": "COMPOUND Test Protocol",
+  "name": "compoundv2",
   "version": "1.0.0",
-  "description": " ",
+  "description": " compoundv2",
   "directories": {
     "test": "test"
   },
@@ -18,15 +18,15 @@
     "deploy-rinkeby": "rm -f -R build && truffle deploy --network rinkeby --reset && node scripts/init_contracts.js && node scripts/set_approval_for_all_by_promoter.js",
     "deploy-live": "rm -f -R build && truffle deploy --network live --reset && NETWORK=mainnet node scripts/init_contracts.js && NETWORK=mainnet node scripts/set_approval_for_all_by_promoter.js"
   },
-  "author": "Ivan Borisov 2622610@gmail.com",
-  "license": "  ",
-  "devDependencies": {
+  "author": "Ivan Borisov <435038@gmail.com>, Ivan Borisov <435038@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
     "await-delay": "^1.0.0",
-    "babel-polyfill": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-stage-2": "^6.18.0",
     "babel-preset-stage-3": "^6.17.0",
-    "babel-register": "^6.23.0",
+    "babel-register": "^6.26.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.0.0",
     "chai-bignumber": "^2.0.0",
@@ -39,17 +39,18 @@
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
-    "eth-gas-reporter": "^0.2.17",
     "ethereumjs-testrpc": "^6.0.3",
+    "eth-gas-reporter": "^0.2.17",
     "ethereumjs-util": "^5.2.0",
     "ethjs-abi": "^0.2.1",
     "graceful-fs": "^4.1.15",
     "js-sha3": "^0.8.0",
     "mocha-lcov-reporter": "^1.3.0",
-    "openzeppelin-solidity": "^1.12.0",
-    "solidity-coverage": "^0.7.4",
+    "solc": "^0.5.17",
+    "solidity-coverage": "^0.7.5",
     "solium": "^1.2.5",
     "truffle": "^5.1.23",
+    "truffle-bytecode-manager": "^1.1.1",
     "truffle-contract": "^4.0.31",
     "truffle-hdwallet-provider": "1.0.17",
     "web3": "^0.20.7"
