@@ -33,7 +33,7 @@ module.exports = {
       provider: infuraProvider('rinkeby'),
       network_id: 4, // eslint-disable-line camelcase
       gasPrice: gasPrice,
-      gas: 6700000
+      gas: 10000000
     },
     ropsten: {
       provider: function() {
