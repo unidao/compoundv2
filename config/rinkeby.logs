@@ -1,0 +1,306 @@
+$ truffle migrate --network rinkeby
+
+Compiling your contracts...
+===========================
+- Fetching solc version list from solc-bin. Attempt #1
+> Compiling .\contracts\CDaiDelegate.sol
+> Compiling .\contracts\CErc20.sol
+> Compiling .\contracts\CErc20Delegate.sol
+> Compiling .\contracts\CErc20Delegator.sol
+> Compiling .\contracts\CErc20Immutable.sol
+> Compiling .\contracts\CEther.sol
+> Compiling .\contracts\CToken.sol
+> Compiling .\contracts\CTokenInterfaces.sol
+> Compiling .\contracts\CarefulMath.sol
+> Compiling .\contracts\Comptroller.sol
+> Compiling .\contracts\ComptrollerG1.sol
+> Compiling .\contracts\ComptrollerInterface.sol
+> Compiling .\contracts\ComptrollerStorage.sol
+> Compiling .\contracts\DAIInterestRateModel.sol
+> Compiling .\contracts\EIP20Interface.sol
+> Compiling .\contracts\EIP20NonStandardInterface.sol
+> Compiling .\contracts\ErrorReporter.sol
+> Compiling .\contracts\Exponential.sol
+> Compiling .\contracts\Governance\Comp.sol
+> Compiling .\contracts\Governance\GovernorAlpha.sol
+> Compiling .\contracts\InterestRateModel.sol
+> Compiling .\contracts\JumpRateModel.sol
+> Compiling .\contracts\Lens\CompoundLens.sol
+> Compiling .\contracts\Maximillion.sol
+> Compiling .\contracts\Migrations.sol
+> Compiling .\contracts\PriceOracle.sol
+> Compiling .\contracts\PriceOracleProxy.sol
+> Compiling .\contracts\SafeMath.sol
+> Compiling .\contracts\SimplePriceOracle.sol
+> Compiling .\contracts\Timelock.sol
+> Compiling .\contracts\Unitroller.sol
+> Compiling .\contracts\WhitePaperInterestRateModel.sol
+- Fetching solc version list from solc-bin. Attempt #1
+> Compilation warnings encountered:
+
+    /C/Users/pillardev/Desktop/Compound2.0/compoundv2/contracts/Governance/Comp.sol:2:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+,/C/Users/pillardev/Desktop/Compound2.0/compoundv2/contracts/Governance/GovernorAlpha.sol:2:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+,/C/Users/pillardev/Desktop/Compound2.0/compoundv2/contracts/Lens/CompoundLens.sol:2:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+,/C/Users/pillardev/Desktop/Compound2.0/compoundv2/contracts/CErc20Delegator.sol:478:5: Warning: Function state mutability can be restricted to view
+    function placeAvailableFundsInDSR() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+> Artifacts written to C:\Users\pillardev\Desktop\Compound2.0\compoundv2\build\contracts
+> Compiled successfully using:
+   - solc: 0.5.17+commit.d19bba13.Emscripten.clang
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 0x989680
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        6469448
+   > block timestamp:     1589197148
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             40.187248996279656626
+   > gas used:            149175
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00149175 ETH
+
+   -------------------------------------
+   > Total cost:          0.00149175 ETH
+
+
+2_deploy_TimeLock.js
+====================
+
+   Deploying 'Timelock'
+   --------------------
+   > block number:        6469450
+   > block timestamp:     1589197159
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             40.169576606279656626
+   > gas used:            1739898
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01739898 ETH
+
+   -------------------------------------
+   > Total cost:          0.01739898 ETH
+
+
+3_deploy_Unitroller.js
+======================
+
+   Deploying 'Unitroller'
+   ----------------------
+   > block number:        6469452
+   > block timestamp:     1589197168
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             40.160762396279656626
+   > gas used:            854080
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0085408 ETH
+
+   -------------------------------------
+   > Total cost:           0.0085408 ETH
+
+
+4_deploy_Comptroller.js
+=======================
+
+   Deploying 'Comptroller'
+   -----------------------
+   > block number:        6469454
+   > block timestamp:     1589197176
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             40.107615116279656626
+   > gas used:            5287387
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.05287387 ETH
+
+   -------------------------------------
+   > Total cost:          0.05287387 ETH
+
+
+6_deploy_InterestRate.js
+========================
+
+   Deploying 'WhitePaperInterestRateModel'
+   ---------------------------------------
+   > block number:        6469456
+   > block timestamp:     1589197187
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             40.098913456279656626
+   > gas used:            842825
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00842825 ETH
+
+   -------------------------------------
+   > Total cost:          0.00842825 ETH
+
+
+Summary
+=======
+> Total deployments:   5
+> Final cost:          0.08873365 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 0x989680
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0xf2c7cb0053229de1ef1c625adae0158d5482cfa08c86698ff1c8b0996fe3b96b
+- Blocks: 0            Seconds: 0
+   > Blocks: 1            Seconds: 8
+   > contract address:    0x2b6C2Ea47De43dBA978859b9EBdb71EB4D4bD9e9
+   > block number:        6469451
+   > block timestamp:     1589197204
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             40.187098996279656626
+   > gas used:            164175
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00164175 ETH
+
+
+- Saving migration to chain.
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00164175 ETH
+
+
+2_deploy_TimeLock.js
+====================
+
+   Deploying 'Timelock'
+   --------------------
+   > transaction hash:    0x76697b797841a3e6271ac9362a55ca7b03972885a54d5baa42a43b57ab3a4fbe
+- Blocks: 0            Seconds: 0
+   > Blocks: 5            Seconds: 84
+   > contract address:    0xFaA543179C29853c29E7370eE499acEE9879Ed30
+   > block number:        6469459
+   > block timestamp:     1589197324
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             40.168976606279656626
+   > gas used:            1769898
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01769898 ETH
+
+
+- Saving migration to chain.
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.01769898 ETH
+
+
+3_deploy_Unitroller.js
+======================
+
+   Deploying 'Unitroller'
+   ----------------------
+   > transaction hash:    0x9a3eb50cba752d4ffb584b32c8ce6865280d6a4f008e977133478f9d18d9a18e
+- Blocks: 0            Seconds: 0
+   > Blocks: 2            Seconds: 41
+   > contract address:    0x91603D69F3Cc5487Dceb330fD85149CD43B16926
+   > block number:        6469465
+   > block timestamp:     1589197414
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             40.160012396279656626
+   > gas used:            869080
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0086908 ETH
+
+
+- Saving migration to chain.
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:           0.0086908 ETH
+
+
+4_deploy_Comptroller.js
+=======================
+
+   Deploying 'Comptroller'
+   -----------------------
+   > transaction hash:    0x670d1d815cd1c644d9d69ac7d5bec9e294913e7c13efba637741b37d406da563
+- Blocks: 0            Seconds: 0
+   > Blocks: 2            Seconds: 40
+   > contract address:    0x333cCd6ddDB4526c39609FE53Ef68EB6D40D04BD
+   > block number:        6469469
+   > block timestamp:     1589197474
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             40.106715116279656626
+   > gas used:            5302387
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.05302387 ETH
+
+
+- Saving migration to chain.
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.05302387 ETH
+
+
+6_deploy_InterestRate.js
+========================
+
+   Deploying 'WhitePaperInterestRateModel'
+   ---------------------------------------
+   > transaction hash:    0x0eee33951783032feec2915ffcc0acebdfc8eea10ad8846f9b329008c5393f4e
+- Blocks: 0            Seconds: 0
+   > Blocks: 3            Seconds: 40
+   > contract address:    0xe7E284C190396Cbc98a9cb1262F2697AcaA14cb8
+   > block number:        6469477
+   > block timestamp:     1589197594
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             40.097563456279656626
+   > gas used:            887825
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00887825 ETH
+
+
+- Saving migration to chain.
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00887825 ETH
+
+
+Summary
+=======
+> Total deployments:   5
+> Final cost:          0.08993365 ETH
