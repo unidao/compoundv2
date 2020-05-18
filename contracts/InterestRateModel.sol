@@ -4,9 +4,11 @@ pragma solidity ^0.5.16;
   * @title Compound's InterestRateModel Interface
   * @author Compound
   */
-contract InterestRateModel {
-    /// @notice Indicator that this is an InterestRateModel contract (for inspection)
-    bool public constant isInterestRateModel = true;
+interface InterestRateModel {
+    /**
+     * @notice Indicator that this is an InterestRateModel contract (for inspection)
+     */
+    function isInterestRateModel() external pure returns (bool);
 
     /**
       * @notice Calculates the current borrow interest rate per block

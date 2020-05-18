@@ -11,5 +11,5 @@ const decimals = "8";
 const admin = "0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98";
 
 module.exports = function(deployer) {
-  deployer.deploy(CEther, comptroller, tinterestRate, mantissa, name_, symbol, decimals, admin);
+  deployer.deploy(CEther, comptroller, itinterestRate, mantissa, name_, symbol, decimals, admin);
 };
