@@ -139,7 +139,7 @@ Migrations dry-run (simulation)
    > Total cost:           0.0523528 ETH
 
 
-6_deploy_InterestRate.js
+5_deploy_InterestRate.js
 ========================
 
    Deploying 'WhitePaperInterestRateModel'
@@ -277,7 +277,7 @@ Starting migrations...
    > Total cost:           0.0525028 ETH
 
 
-6_deploy_InterestRate.js
+5_deploy_InterestRate.js
 ========================
 
    Deploying 'WhitePaperInterestRateModel'
@@ -307,3 +307,348 @@ Summary
 =======
 > Total deployments:   5
 > Final cost:          0.08546626 ETH
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 10000000 (0x989680)
+
+
+6_deploy_CEther.js
+==================
+
+   Deploying 'CEther'
+   ------------------
+   > block number:        6512260
+   > block timestamp:     1589839383
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             39.877846906279656626
+   > gas used:            4336545 (0x422ba1)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04336545 ETH
+
+   -------------------------------------
+   > Total cost:          0.04336545 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.04336545 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 10000000 (0x989680)
+
+
+6_deploy_CEther.js
+==================
+
+   Deploying 'CEther'
+   ------------------
+   > transaction hash:    0x8ee39b32f5cb398eb84c143bcb2940ad4464cd32af2478dc1f4a48c67584c5df
+- Blocks: 0            Seconds: 0
+   > Blocks: 0            Seconds: 4
+   > contract address:    0xED235778Acd49257c9357BFeE6A18EbABE645c61
+   > block number:        6512266
+   > block timestamp:     1589839430
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             39.876346906279656626
+   > gas used:            4486545 (0x447591)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04486545 ETH
+
+
+- Saving migration to chain.
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.04486545 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.04486545 ETH
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 10000000 (0x989680)
+
+
+7_deploy_Maximillion.js
+=======================
+
+   Deploying 'Maximillion'
+   -----------------------
+   > block number:        6512283
+   > block timestamp:     1589839695
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             39.873910926279656626
+   > gas used:            216257 (0x34cc1)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00216257 ETH
+
+   -------------------------------------
+   > Total cost:          0.00216257 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.00216257 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 10000000 (0x989680)
+
+
+7_deploy_Maximillion.js
+=======================
+
+   Deploying 'Maximillion'
+   -----------------------
+   > transaction hash:    0x22ce3cca5ab9ada15c22b1cdd097cb764196469a69be2416cf374fba9bb247cc
+- Blocks: 0            Seconds: 0
+   > Blocks: 0            Seconds: 8
+   > contract address:    0x204eD4Ea87421D1D305B30D183F9e9ADF1B78295
+   > block number:        6512286
+   > block timestamp:     1589839730
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             39.873760926279656626
+   > gas used:            231257 (0x38759)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00231257 ETH
+
+
+- Saving migration to chain.
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00231257 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.00231257 ETH
+
+
+8_deploy_cDaiDelegate.js
+========================
+
+   Deploying 'CDaiDelegate'
+   ------------------------
+   > block number:        6512315
+   > block timestamp:     1589840187
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             39.821075896279656626
+   > gas used:            5241162 (0x4ff94a)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.05241162 ETH
+
+   -------------------------------------
+   > Total cost:          0.05241162 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.05241162 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 10000000 (0x989680)
+
+
+8_deploy_cDaiDelegate.js
+========================
+
+   Deploying 'CDaiDelegate'
+   ------------------------
+   > transaction hash:    0x23b5be7d4d5065f80db7fb68b330e723e1b21878ce5e859b13666d3d75326150
+- Blocks: 0            Seconds: 0
+   > Blocks: 2            Seconds: 16
+   > contract address:    0xab1cde7464032d08EF15994aA8f9B5E53E0edbe7
+   > block number:        6512320
+   > block timestamp:     1589840240
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             39.821075896279656626
+   > gas used:            5241162 (0x4ff94a)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.05241162 ETH
+
+
+- Saving migration to chain.
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.05241162 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.05241162 ETH
+
+9_deploy_Comp.js
+================
+
+   Deploying 'Comp'
+   ----------------
+   > block number:        6512338
+   > block timestamp:     1589840528
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             39.805467146279656626
+   > gas used:            1533534 (0x17665e)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01533534 ETH
+
+   -------------------------------------
+   > Total cost:          0.01533534 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.01533534 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 10000000 (0x989680)
+
+
+9_deploy_Comp.js
+================
+
+   Deploying 'Comp'
+   ----------------
+   > transaction hash:    0x0df8d512b789751afa8554fe3618181a1374ee99669e89a67f34a3d2d75ef128
+- Blocks: 0            Seconds: 0
+   > Blocks: 0            Seconds: 8
+   > contract address:    0xb4cB36fF6e778b38D2b95A4873a999Cb3A85ead5
+   > block number:        6512342
+   > block timestamp:     1589840570
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             39.805317146279656626
+   > gas used:            1548534 (0x17a0f6)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01548534 ETH
+
+
+- Saving migration to chain.
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.01548534 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.01548534 ETH
+
+
+10_deploy_GovernorAlpha.js
+==========================
+
+   Deploying 'GovernorAlpha'
+   -------------------------
+   > block number:        6512365
+   > block timestamp:     1589840939
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             39.773323856279656626
+   > gas used:            3171988 (0x306694)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03171988 ETH
+
+   -------------------------------------
+   > Total cost:          0.03171988 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.03171988 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 10000000 (0x989680)
+
+
+10_deploy_GovernorAlpha.js
+==========================
+
+   Deploying 'GovernorAlpha'
+   -------------------------
+   > transaction hash:    0xf31fb280283440144e38334ff75b75f86d59a7918d15eee3601458db34804dd8
+- Blocks: 0            Seconds: 0
+   > Blocks: 0            Seconds: 12
+   > contract address:    0x0DF1E8C195B09D3C7e63d0149769457E19Fc8569
+   > block number:        6512370
+   > block timestamp:     1589840990
+   > account:             0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98
+   > balance:             39.772873856279656626
+   > gas used:            3216988 (0x31165c)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03216988 ETH
+
+
+- Saving migration to chain.
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.03216988 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.03216988 ETH
+
+

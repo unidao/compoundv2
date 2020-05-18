@@ -1,3 +1,7 @@
+/**
+ *Submitted for verification at Etherscan.io on 2020-03-04
+*/
+
 pragma solidity ^0.5.16;
 pragma experimental ABIEncoderV2;
 
@@ -141,9 +145,9 @@ contract GovernorAlpha {
 
         uint latestProposalId = latestProposalIds[msg.sender];
         if (latestProposalId != 0) {
-          ProposalState proposersLatestProposalState = state(latestProposalId);
-          require(proposersLatestProposalState != ProposalState.Active, "GovernorAlpha::propose: one live proposal per proposer, found an already active proposal");
-          require(proposersLatestProposalState != ProposalState.Pending, "GovernorAlpha::propose: one live proposal per proposer, found an already pending proposal");
+            ProposalState proposersLatestProposalState = state(latestProposalId);
+            require(proposersLatestProposalState != ProposalState.Active, "GovernorAlpha::propose: one live proposal per proposer, found an already active proposal");
+            require(proposersLatestProposalState != ProposalState.Pending, "GovernorAlpha::propose: one live proposal per proposer, found an already pending proposal");
         }
 
         uint startBlock = add256(block.number, votingDelay());
@@ -164,7 +168,7 @@ contract GovernorAlpha {
             againstVotes: 0,
             canceled: false,
             executed: false
-        });
+            });
 
         proposals[newProposal.id] = newProposal;
         latestProposalIds[newProposal.proposer] = newProposal.id;
