@@ -1,7 +1,7 @@
 const CEther = artifacts.require("CEther");
 
-const comptroller = "0x333cCd6ddDB4526c39609FE53Ef68EB6D40D04BD";
-const tinterestRate = "0xe7E284C190396Cbc98a9cb1262F2697AcaA14cb8";
+const comptroller = "0xEeb51Df5c21736C6E97825aEfbef797566821461";
+const interestRate = "0xf0143FcA0d168d22c7FF345d343a81A2A5AAc143";
 
 const mantissa= "200000000000000000000000000";
 const name_ = "Compound Ether ";
@@ -11,5 +11,5 @@ const decimals = "8";
 const admin = "0x2fd852c9a9aBb66788F96955E9928aEF3D71aE98";
 
 module.exports = function(deployer) {
-  deployer.deploy(CEther, comptroller, itinterestRate, mantissa, name_, symbol, decimals, admin);
+  deployer.deploy(CEther, comptroller, interestRate, mantissa, name_, symbol, decimals, admin);
 };
