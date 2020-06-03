@@ -5,18 +5,19 @@
     "PriceOracle": " ",
     "ZeroComptroller": " ",
     "PriceOracleProxy": " ",
-    "Maximillion": "0x8aB5631e2d96706BE3815AfDC37061Abff203757",
+    "Maximillion": "0x23550231Ae737Be6e0B8a6E9F19F9Ee7721646a4",
     "cDAI": "0x6D7F0754FFeb405d23C51CE938289d4835bE3b14",
     "DAI": "0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa",
+    "cDaiDelegate": "0x006B50a8997e4D43b09Ff0b78713D7cDC4A0fe0B",
     "StdComptroller": " ",
-    "Unitroller": "0x4CbAd1f127c7ac1B55eED59634AF3eaf099B6795",
-    "Comptroller": "0x1B4e73512c62317732A28E56b280a5C00F72B634",
+    "Unitroller": "0x4acc8e025922674dB3baE5Aa23E6Dc97b05CAbE8",
+    "Comptroller": "0x1AF39D063F335eB148Bc72359eC8cC83Cd879E83",
     "cBAT": " ",
     "Base0bps_Slope2000bps": " ",
     "BAT": " ",
-    "cETH": "0x03e1a24b978b4743De28E1a53d9f16e2459123a9",
+    "cETH": "0xc2eA53C0245Fd569D28560fe1cc5c9cB5b0D67aa",
     "Base500bps_Slope1200bps": " ",
-    "Timelock": "0xa4d12FFF681692CbEbB5d2Da998205D762D10fcE",
+    "Timelock": "0xBFead375D6107836EF00e2d743AdeC7aD15bF79d",
     "Base200bps_Slope3000bps": " ",
     "cREP": " ",
     "ComptrollerG2": " ",
@@ -26,8 +27,8 @@
     "cWBTC": " ",
     "USDC": " ",
     "CDaiDelegate": "0xABcF5Fb6cF023AC3e12718d4C4C2cf6B65D2a686",
-    "Comp": "0x5a746066aa8E3Bae4C72EDd79EEeF85c9f2058eE",
-    "GovernorAlpha": "0xBc7a20Be4C4F596A2f7E6f0730812Bd11169cb57"
+    "Comp": "0xecCbD7A2B1E12902D3182B00FE1dcAe59dAC9500",
+    "GovernorAlpha": "0xFB502C464b7c8aD08A1CBa6Dc606cC9700E72B53"
   },
   "Blocks": {
   },
@@ -39,7 +40,8 @@
       "description": "WhitePaper baseRate=50000000000000000 multiplier=120000000000000000",
       "base": "50000000000000000",
       "slope": "120000000000000000",
-      "address": "0xA11210B77a73D84B363B432b1d287A9Cd7284615"
+      "address": "0x0640937993cC7CFb0E7C1C18bD6D6eB1D321FE19"
     }
   }
 }
+
