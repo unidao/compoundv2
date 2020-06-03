@@ -2,7 +2,7 @@ const cDAI = artifacts.require("CErc20Delegator");
 
 const underlying = "0x6b175474e89094c44da98b954eedeac495271d0f";
 const comptroller = "0xEeb51Df5c21736C6E97825aEfbef797566821461";
-const DAIInterestRateModel = ";
+const DAIInterestRateModel = "";
 const mantissa= "200000000000000000000000000";
 const name_= "Compound Dai";
 const symbol = "cDAI";

@@ -1,0 +1,45 @@
+{
+  "Contracts": {
+    "ZRX": " ",
+    "cUSDC": " ",
+    "PriceOracle": " ",
+    "ZeroComptroller": " ",
+    "PriceOracleProxy": " ",
+    "Maximillion": "0x8aB5631e2d96706BE3815AfDC37061Abff203757",
+    "cDAI": "0x6D7F0754FFeb405d23C51CE938289d4835bE3b14",
+    "DAI": "0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa",
+    "StdComptroller": " ",
+    "Unitroller": "0x4CbAd1f127c7ac1B55eED59634AF3eaf099B6795",
+    "Comptroller": "0x1B4e73512c62317732A28E56b280a5C00F72B634",
+    "cBAT": " ",
+    "Base0bps_Slope2000bps": " ",
+    "BAT": " ",
+    "cETH": "0x03e1a24b978b4743De28E1a53d9f16e2459123a9",
+    "Base500bps_Slope1200bps": " ",
+    "Timelock": "0xa4d12FFF681692CbEbB5d2Da998205D762D10fcE",
+    "Base200bps_Slope3000bps": " ",
+    "cREP": " ",
+    "ComptrollerG2": " ",
+    "WBTC": " ",
+    "REP": " ",
+    "cZRX": " ",
+    "cWBTC": " ",
+    "USDC": " ",
+    "CDaiDelegate": "0xABcF5Fb6cF023AC3e12718d4C4C2cf6B65D2a686",
+    "Comp": "0x5a746066aa8E3Bae4C72EDd79EEeF85c9f2058eE",
+    "GovernorAlpha": "0xBc7a20Be4C4F596A2f7E6f0730812Bd11169cb57"
+  },
+  "Blocks": {
+  },
+
+  "InterestRateModel": {
+    "Base500bps_Slope1200bps": {
+      "name": "Base500bps_Slope1200bps",
+      "contract": "WhitePaperInterestRateModel",
+      "description": "WhitePaper baseRate=50000000000000000 multiplier=120000000000000000",
+      "base": "50000000000000000",
+      "slope": "120000000000000000",
+      "address": "0xA11210B77a73D84B363B432b1d287A9Cd7284615"
+    }
+  }
+}
